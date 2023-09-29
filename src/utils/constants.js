@@ -1,0 +1,6 @@
+const ARROW_TYPE = {
+  INCREMENT: "INCREMENT",
+  DECREMENT: "DECREMENT",
+};
+
+export { ARROW_TYPE };
