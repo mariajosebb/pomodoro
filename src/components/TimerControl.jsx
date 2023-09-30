@@ -1,4 +1,4 @@
-import { HiPlay, HiStop, HiRefresh } from "react-icons/Hi";
+import { HiPlay, HiStop, HiRefresh } from "react-icons/hi";
 
 const TimerControl = ({ isRunning, start, stop, reset }) => {
   return (
