@@ -7,17 +7,24 @@ const SessionLength = ({
 }) => {
   return (
     <div id="session-label" className="text-base">
-      <div className="text">Session Length</div>
+      <div className="text" id="session-label">
+        Session Length
+      </div>
       <div className="arrow-container">
-        <BsArrowBarUp
+        <button
           id="session-increment"
           onClick={() => handleCurrentSessionLength(ARROW_TYPE.INCREMENT)}
-        />
-        <span>{currentSessionLength}</span>
-        <BsArrowBarDown
+        >
+          <BsArrowBarUp />
+        </button>
+        <div id="session-length">{currentSessionLength}</div>
+        <button
           id="session-decrement"
           onClick={() => handleCurrentSessionLength(ARROW_TYPE.DECREMENT)}
-        />
+        >
+          {" "}
+          <BsArrowBarDown />
+        </button>
       </div>
     </div>
   );

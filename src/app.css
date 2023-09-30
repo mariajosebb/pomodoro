@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
 #root {
   height: 100vh;
@@ -8,14 +9,20 @@
 }
 
 body {
-  background-color: #2c423f;
+  background-color: #5e4b56;
   height: 100vh;
   font-family: "Bree Serif", serif;
-  color: #c5c5c5;
+  color: #5e4b56;
+}
+
+button {
+  background: none;
+  border: none;
 }
 
 #container {
-  border: 1px solid red;
+  background-color: #fcd0a1;
+  border-radius: 10px;
   width: 37.5rem;
   max-width: 80vw;
   height: auto;
@@ -35,6 +42,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
 #break-label {
@@ -46,7 +54,42 @@ body {
 .arrow-container {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+#timer {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
   justify-content: center;
+}
+
+#time-left {
+  background: black;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  padding: 25px;
+  border: 8px solid rgba(165, 42, 42, 0.751);
+  border-radius: 14px;
+  min-width: 275px;
+  text-align: center;
+}
+
+#timer-control {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+.clip {
+  display: "none";
 }
 
 .text-lg {
@@ -60,6 +103,6 @@ body {
 }
 
 .text-2xl {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 400;
 }
